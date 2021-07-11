@@ -1,11 +1,10 @@
 # Docking to Tor
 
-Docker container setup for sending ssh/web/dns traffic over the Tor network on startup.<br>
+Docker container setup for sending ssh/web/dns traffic over the Tor network on startup. This will also proxy applications such as Terraform which do not natively provide a way to specify proxy addresses.<br>
 
 ## Start container
 
 ```bash
-#!/bin/bash
 docker run -it --cap-add=NET_ADMIN \
         --dns 127.0.0.1 \
         --add-host socks5h:127.0.0.11 \
