@@ -27,9 +27,5 @@ COPY ./start.sh /root/start.sh
 
 RUN chmod 755 /root/start.sh 
 
-ENV ALL_PROXY="socks5h://127.0.0.1:9050"
-ENV HTTPS_PROXY="socks5h://127.0.0.1:9050"
-ENV HTTP_PROXY="socks5h://127.0.0.1:9050"
-
 WORKDIR /root/
 ENTRYPOINT [ "/root/start.sh" ]
