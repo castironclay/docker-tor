@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-ARG CLOUDFLARED=2021.5.10
+ARG CLOUDFLARED=2021.6.0
 
 # Backports
 RUN echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' > /etc/apt/sources.list.d/buster-backports.list
