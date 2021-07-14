@@ -11,7 +11,7 @@ RUN set -x && \
     apt-get update -y -q && \
     apt-get upgrade -y -q && \
     apt-get install -y -q dialog apt-utils && \
-    apt-get install -y -q wget unzip screen vim ssh python3-pip wireguard tor curl iputils-ping net-tools socat netcat connect-proxy
+    apt-get install -y -q wget unzip screen vim ssh python3-pip wireguard tor curl iputils-ping net-tools socat netcat connect-proxy python3 jq
 
 # Update torrc
 RUN mv /etc/tor/torrc /etc/tor/torrc.orig && \
