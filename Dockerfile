@@ -15,7 +15,7 @@ RUN set -x && \
 
 # Update torrc
 RUN mv /etc/tor/torrc /etc/tor/torrc.orig && \
-    echo "SocksPort 127.0.0.1:9050" >> /etc/tor/torrc && \
+    echo "SocksPort 0.0.0.0:9050" >> /etc/tor/torrc && \
     echo "Log notice file /var/log/tor/tor.log" >> /etc/tor/torrc
 
 # DNS over HTTPS
